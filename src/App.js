@@ -103,7 +103,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route
-              path="/home"
+              path="/"
               element={
                 <Suspense fallback={<Loading />}>
                   <MainLayout>
@@ -114,7 +114,6 @@ const App = () => {
               }
             />
 
-            <Route path="/" element={<LandingPage />} />
             <Route
               path="/product/:id"
               element={
