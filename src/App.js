@@ -67,6 +67,7 @@ const UpdateProduct = React.lazy(() =>
 const Header = React.lazy(() => import("./components/layout/Header/Header"));
 const UpdateOrder = React.lazy(() => import("./components/admin/UpdateOrder"));
 const UpdateUser = React.lazy(() => import("./components/admin/UpdateUser"));
+const LandingPage = React.lazy(() => import("./LandingPage.js"));
 const App = () => {
   const dispatch = useDispatch();
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -102,7 +103,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route
-              path="/"
+              path="/home"
               element={
                 <Suspense fallback={<Loading />}>
                   <MainLayout>
@@ -112,7 +113,8 @@ const App = () => {
                 </Suspense>
               }
             />
-            <Route path="/loading" element={<Loading />} />
+
+            <Route path="/" element={<LandingPage />} />
             <Route
               path="/product/:id"
               element={
