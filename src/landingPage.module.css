@@ -1,0 +1,146 @@
+.landing-page {
+    font-family: Arial, sans-serif;
+    margin-top: 8vmax;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .hero {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #333;
+  }
+  .hero-tile-1{
+    font-size: 3rem;
+    color: #111;
+  }
+  .hero-subtitle {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .shop-now-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .benefits {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 20px;
+  }
+  
+  .benefit-icon {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .products {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .products h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .cta {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    margin-bottom: 20px;
+  }
+  
+  .explore-products-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .explore-products-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-media {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .fa {
+    font-size: 2em;
+    color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .fa:hover {
+    transform: translateY(-5px);
+  }

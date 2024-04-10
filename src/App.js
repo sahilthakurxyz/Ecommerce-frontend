@@ -106,6 +106,16 @@ const App = () => {
               path="/"
               element={
                 <Suspense fallback={<Loading />}>
+                  <NavMenu />
+                  <Header />
+                  <LandingPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/home"
+              element={
+                <Suspense fallback={<Loading />}>
                   <MainLayout>
                     <Banner />
                     <Home />
