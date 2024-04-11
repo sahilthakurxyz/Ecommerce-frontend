@@ -67,7 +67,6 @@ const UpdateProduct = React.lazy(() =>
 const Header = React.lazy(() => import("./components/layout/Header/Header"));
 const UpdateOrder = React.lazy(() => import("./components/admin/UpdateOrder"));
 const UpdateUser = React.lazy(() => import("./components/admin/UpdateUser"));
-const LandingPage = React.lazy(() => import("./LandingPage.js"));
 const App = () => {
   const dispatch = useDispatch();
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -80,12 +79,9 @@ const App = () => {
       setStripeApiKey(data?.stripeKey);
     } catch (error) {
       if (error.response && error.response.status === 401) {
-        // Handle unauthorized access error
-        // Optionally, redirect the user to the login page or display an error message
+        console.log(error.response);
       } else {
-        // Handle other errors
         console.error("Error fetching Stripe API key:", error);
-        // Optionally, display an error message to the user
       }
     }
   };
@@ -104,16 +100,6 @@ const App = () => {
           <Routes>
             <Route
               path="/"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <NavMenu />
-                  <Header />
-                  <LandingPage />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/home"
               element={
                 <Suspense fallback={<Loading />}>
                   <MainLayout>
